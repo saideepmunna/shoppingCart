@@ -1,0 +1,191 @@
+/**
+   changing degault sizes
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body{
+    width: 100vw;
+}
+
+.navbar{
+    background-color: #212529;
+    color: #ffffff;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cart{
+    font-size: 35px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.cartQuantity{
+    font-size: 15px;
+    padding: 4px;
+    background-color: grey;
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    right: -6px;
+    cursor: pointer;
+}
+
+/**
+* ! Shop item styles here
+**/
+.shop{
+   display: grid;
+   grid-template-columns: repeat(4, 223px);
+   gap: 15px;
+   justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+    
+}
+@media (max-width: 500px) {
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+    
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+.details{
+    padding: 10px;
+}
+
+.details p{
+   margin-block: 8px;
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.buttons{
+    display: flex;
+    font-size: 17px;
+    width: 60px;
+    justify-content: space-between;
+}
+
+.buttons i{
+    /* margin-right: 10px; */
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.fa-plus{
+    color: #F57600;
+}
+
+
+
+/**
+* ?  ***CART STYLING***
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-center h2{
+    margin-bottom: 7px;
+}
+
+.text-center button{
+    padding: 6px 4px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: rgb(244, 244, 114);
+    border: none;
+    border-radius: 4px;
+    color: #212259;
+    cursor: pointer;
+}
+
+
+.home-btn{
+    background-color: #212259;
+    color: #fff;
+    border: none;
+    padding:6px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.totalBill{
+    font-size: 23px;
+}
+
+
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 12px;
+}
+
+.cart-item{
+    border: 2px solid #212529;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+
+.cloth-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.Title-price-x{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 198px;
+}
+
+.fa-x{
+    cursor: pointer;;
+}
+
+.cloth-price-design{
+    background-color: #212529;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 6px;
+}
+
+.total-product-price{
+    margin-top: 8px;
+}

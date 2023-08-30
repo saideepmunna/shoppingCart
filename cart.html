@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><h2>Your Cart</h2></a>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cartQuantity">0</div>
+        </div>
+        
+    </div>
+    <div class="myEntireCart">
+    <div class="text-center" id="label">
+        <h2>Total Amount: $ <span class="totalBill">1200</span></h2>
+        <button class="checkout">Checkout</button>
+        <button class="clearCart">Clear Cart</button>
+    </div>
+
+    <div class="shopping-cart" id="shopping-cart"></div>
+    </div>
+</body>
+    
+    <script src="/src/products.js"></script>
+    <script src="/src/cart.js"></script>
+</body>
+</html>
